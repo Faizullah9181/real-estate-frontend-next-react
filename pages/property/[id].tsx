@@ -6,6 +6,8 @@ import SpinnerLarge from "../../components/common/SpinnerLarge";
 import MainContent from "../../components/property/MainContent";
 import PropertyPicCarousel from "../../components/property/PropertyPicCarousel";
 import { fetchProperty } from "../../functions";
+import { DefaultSeo } from 'next-seo';
+import SEO from '../../next-seo.config';
 
 const SinglePropertyPage = () => {
   const [propertyData, setPropertyData] = useState({
@@ -51,7 +53,9 @@ const SinglePropertyPage = () => {
           content="Real Estate Site My Newzai Developers. Property"
         />
         <meta name="keywords" content="Property Ayodhya Faizabad Newzai" />
+        <DefaultSeo {...SEO} />
       </Head>
+      <DefaultSeo {...SEO} />
       <div className="property-details">
         <BreadCrumb text="Property Details" />
         {isLoading ? (

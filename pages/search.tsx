@@ -6,6 +6,8 @@ import PropertiesInfinite from "../components/common/PropertiesInfinite";
 import SpinnerLarge from "../components/common/SpinnerLarge";
 import SpinnerSmall from "../components/common/SpinnerSmall";
 import { findProperties } from "../functions";
+import { DefaultSeo } from 'next-seo';
+import SEO from '../next-seo.config';
 
 const Search = () => {
   const router = useRouter();
@@ -52,7 +54,9 @@ const Search = () => {
           name="description"
           content="Real Estate Site My Nexus Realtor. Shop"
         />
+        <DefaultSeo {...SEO} />
       </Head>
+      <DefaultSeo {...SEO} />
       {router.isReady && <BreadCrumb text={"Search Results For " + query} />}
       {isLoading ? (
         <>

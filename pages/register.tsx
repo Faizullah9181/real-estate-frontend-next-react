@@ -11,6 +11,8 @@ import SpinnerSmall from "../components/common/SpinnerSmall";
 import { registerUser } from "../functions";
 import { toast } from "react-toastify";
 import { useRouter } from "next/router";
+import { DefaultSeo } from 'next-seo';
+import SEO from '../next-seo.config';
 
 interface PropTypes {
   packagesArray: {
@@ -84,7 +86,9 @@ const Register = () => {
           name="description"
           content="Real Estate Site My Nexus Realtor. Register"
         />
+        <DefaultSeo {...SEO} />
       </Head>
+      <DefaultSeo {...SEO} />
       <BreadCrumb text="Register" />
       <div className="form py-40 bg-gray-50">
         <section>

@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import BreadCrumb from "../components/common/BreadCrumb";
 import PropertiesInfinite from "../components/common/PropertiesInfinite";
 import SpinnerLarge from "../components/common/SpinnerLarge";
+import { DefaultSeo } from 'next-seo';
+import SEO from '../next-seo.config';
 
 import { fetchProperties } from "../functions";
 
@@ -57,8 +59,10 @@ const Shop = () => {
           name="description"
           content="Real Estate Site My Nexus Realtor. Shop"
         />
+        <DefaultSeo {...SEO} />
       </Head>
       <BreadCrumb text="Shop" />
+      <DefaultSeo {...SEO} />
       {isLoading ? (
         <div className="mt-20 mb-40 text-center">
           <SpinnerLarge />
