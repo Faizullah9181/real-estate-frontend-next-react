@@ -8,7 +8,7 @@ import TextInput from "../components/common/TextInput";
 import { useFormik } from "formik";
 import { RegisterFormSchema } from "../yupSchemas";
 import SpinnerSmall from "../components/common/SpinnerSmall";
-import { fetchPackages, registerUser } from "../functions";
+import { registerUser } from "../functions";
 import { toast } from "react-toastify";
 import { useRouter } from "next/router";
 
@@ -46,7 +46,7 @@ const Register = () => {
     name: "",
     phone_no: "",
     email: "",
-    password: ""
+    password: "",
   };
 
   const { values, touched, errors, handleBlur, handleChange, handleSubmit } =
@@ -72,22 +72,9 @@ const Register = () => {
     });
   // !Configurations For Formik -------------------------->
 
-  const getPackages = async () => {
-    const packagesArray = await fetchPackages();
-    setPackages(packagesArray);
-  };
-
   /**
    * Protected Route
    */
-  useEffect(() => {
-    if (localStorage.getItem("re-user")) {
-      router.push("/dashboard?route=myProperties");
-      return;
-    }
-    getPackages();
-    //eslint-disable-next-line
-  }, []);
 
   return (
     <div>
@@ -199,3 +186,4 @@ const Register = () => {
 };
 
 export default Register;
+
