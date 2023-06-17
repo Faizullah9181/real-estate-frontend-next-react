@@ -48,8 +48,9 @@ const SinglePropertyPage = () => {
         <title>Property</title>
         <meta
           name="description"
-          content="Real Estate Site My Nexus Realtor. Property"
+          content="Real Estate Site My Newzai Developers. Property"
         />
+        <meta name="keywords" content="Property Ayodhya Faizabad Newzai" />
       </Head>
       <div className="property-details">
         <BreadCrumb text="Property Details" />

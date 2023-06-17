@@ -14,8 +14,10 @@ export default function Home() {
         <title>Home</title>
         <meta
           name="description"
-          content="Real Estate Site My Nexus Realtor. Home"
+          content="Real Estate Site My Newzai Developers. Home"
         />
+         <meta name="keywords" content="Property Ayodhya Faizabad Newzai" />
+         <meta name="google" content="newzai developers ayodhya land in ayodhya faizabad" />
       </Head>
       <Hero />
       <About />

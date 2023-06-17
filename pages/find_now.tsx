@@ -76,8 +76,9 @@ const FindNow = () => {
         <title>Find Now</title>
         <meta
           name="description"
-          content="Real Estate Site My Nexus Realtor. Find Now"
+          content="Real Estate Site My Newzai Developersr. Find Now"
         />
+         <meta name="keywords" content="Property Ayodhya Faizabad Newzai" />
       </Head>
       {router.isReady && (
         <BreadCrumb

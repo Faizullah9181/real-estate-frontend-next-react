@@ -9,8 +9,9 @@ const contact = () => {
         <title>Contact</title>
         <meta
           name="description"
-          content="Real Estate Site My Nexus Realtor. Contact"
+          content="Real Estate Site My Newzai Developers. Contact Us"
         />
+         <meta name="keywords" content="Property Ayodhya Faizabad Newzai" />
       </Head>
       <BreadCrumb text="Contact Us" />
       <div className="main-content px-10 py-20 container mx-auto">
