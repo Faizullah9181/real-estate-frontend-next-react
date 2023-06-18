@@ -62,15 +62,6 @@ const ListingsModal = ({ size, handleOpen, property }: Proptypes) => {
           <div className="product-name text-black">
             <h1 className="text-2xl poppins font-semibold">{property.title}</h1>
           </div>
-          <div className="product-price flex items-center text-pink-500">
-            {property.before_price_label && (
-              <span className="mt-2">{property.before_price_label}/ </span>
-            )}
-            <TextSemiLarge text={`Rs ${property.price}`} />
-            {property.after_price_label && (
-              <span className="mt-2"> /{property.after_price_label}</span>
-            )}
-          </div>
           <div className="product-categories border-y-2 py-4 poppins border-gray-300">
             <span className="text-md">
               <strong className="text-black">Seller:</strong> &nbsp;

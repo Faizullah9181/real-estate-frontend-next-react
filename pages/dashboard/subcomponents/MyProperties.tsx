@@ -155,9 +155,6 @@ const MyProperties = () => {
                           {new Date(property.createdAt).toLocaleString()}
                         </td>
                         <td className="py-4 px-6 text-start">
-                          Rs {property.price}
-                        </td>
-                        <td className="py-4 px-6 text-start">
                           {property.property_size} SQFT
                         </td>
                         <td className="py-4 px-6 text-start">
